@@ -34,58 +34,58 @@
   font-size: 3rem;
 }
 
-#filgrimage_pageOne {
+#pilgrimage_pageOne {
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
 }
-#filgrimage_pageOne > div:nth-child(1) {
+#pilgrimage_pageOne > div:nth-child(1) {
   width: 100vw;
   height: 100vh;
   display: flex;
   background-size: cover;
 }
-#filgrimage_pageOne > div:nth-child(1) > div {
+#pilgrimage_pageOne > div:nth-child(1) > div {
   width: 16.6vw;
   height: 100vh;
   background-size: cover;
 }
-#filgrimage_pageOne > div:nth-child(1) > div:nth-child(1) {
+#pilgrimage_pageOne > div:nth-child(1) > div:nth-child(1) {
   background-image: url(/Image/byun.svg);
   background-size: cover;
 }
-#filgrimage_pageOne > div:nth-child(1) > div:nth-child(2) {
+#pilgrimage_pageOne > div:nth-child(1) > div:nth-child(2) {
   background-image: url(/Image/leejoo.svg);
   background-size: cover;
 }
-#filgrimage_pageOne > div:nth-child(1) > div:nth-child(3) {
+#pilgrimage_pageOne > div:nth-child(1) > div:nth-child(3) {
   background-image: url(/Image/untae.svg);
   background-size: cover;
 }
-#filgrimage_pageOne > div:nth-child(1) > div:nth-child(4) {
+#pilgrimage_pageOne > div:nth-child(1) > div:nth-child(4) {
   background-image: url(/Image/leemin.svg);
   background-size: cover;
 }
-#filgrimage_pageOne > div:nth-child(1) > div:nth-child(5) {
+#pilgrimage_pageOne > div:nth-child(1) > div:nth-child(5) {
   background-image: url(/Image/gugyo.svg);
   background-size: cover;
 }
-#filgrimage_pageOne > div:nth-child(1) > div:nth-child(6) {
+#pilgrimage_pageOne > div:nth-child(1) > div:nth-child(6) {
   background-image: url(/Image/jeonteo.svg);
   background-size: cover;
 }
-#filgrimage_pageOne span {
+#pilgrimage_pageOne span {
   opacity: 0;
 }
-#filgrimage_pageOne span.fade {
+#pilgrimage_pageOne span.fade {
   opacity: 1;
   transition: 0.7s ease;
   transform: translateX(50px);
   color: #BA3737;
 }
 
-#filgrimage_pageTwo {
+#pilgrimage_pageTwo {
   width: 100vw;
   height: 100vh;
   overflow: scroll;
@@ -93,10 +93,10 @@
   background-size: cover;
   display: flex;
 }
-#filgrimage_pageTwo > div:nth-child(1) {
+#pilgrimage_pageTwo > div:nth-child(1) {
   width: 23vw;
 }
-#filgrimage_pageTwo #leftPage {
+#pilgrimage_pageTwo #leftPage {
   width: 30vw;
   height: 100vh;
   -webkit-backdrop-filter: blur(10px);
@@ -108,33 +108,33 @@
   left: 0;
   top: 0vh;
 }
-#filgrimage_pageTwo #leftPage > div {
+#pilgrimage_pageTwo #leftPage > div {
   width: 30vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-#filgrimage_pageTwo #leftPage > div > h5 {
+#pilgrimage_pageTwo #leftPage > div > h5 {
   font-size: 4rem;
   height: 20vh;
 }
-#filgrimage_pageTwo #leftPage > div > p {
+#pilgrimage_pageTwo #leftPage > div > p {
   width: 20vw;
   text-align: center;
   line-height: 50px;
 }
-#filgrimage_pageTwo > div:nth-child(3) {
+#pilgrimage_pageTwo > div:nth-child(3) {
   width: 70vw;
   background-color: #ccc;
 }
-#filgrimage_pageTwo > div:nth-child(3) #rightPage {
+#pilgrimage_pageTwo > div:nth-child(3) #rightPage {
   width: 70vw;
   background-color: #ccc;
   display: flex;
   flex-direction: column;
 }
-#filgrimage_pageTwo > div:nth-child(3) #rightPage > ul {
+#pilgrimage_pageTwo > div:nth-child(3) #rightPage > ul {
   width: 70vw;
   height: 15vh;
   display: flex;
@@ -147,12 +147,12 @@
   font-size: 4rem;
   color: rgb(165, 165, 165);
 }
-#filgrimage_pageTwo > div:nth-child(3) #rightPage #pageOne {
+#pilgrimage_pageTwo > div:nth-child(3) #rightPage #pageOne {
   width: 70vw;
   height: 70vh;
   background-color: #222;
 }
-#filgrimage_pageTwo > div:nth-child(3) #rightPage #detailOne {
+#pilgrimage_pageTwo > div:nth-child(3) #rightPage #detailOne {
   width: 70vw;
   height: 30vh;
   background-color: #ccc;
@@ -161,7 +161,7 @@
   align-items: center;
   justify-content: center;
 }
-#filgrimage_pageTwo > div:nth-child(3) #rightPage #detailOne > div:nth-child(1) {
+#pilgrimage_pageTwo > div:nth-child(3) #rightPage #detailOne > div:nth-child(1) {
   width: 50vw;
   height: 30vh;
   display: flex;
@@ -169,24 +169,24 @@
   align-items: center;
   justify-content: center;
 }
-#filgrimage_pageTwo > div:nth-child(3) #rightPage #detailOne > div:nth-child(1) > h1 {
+#pilgrimage_pageTwo > div:nth-child(3) #rightPage #detailOne > div:nth-child(1) > h1 {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 10vh;
 }
-#filgrimage_pageTwo > div:nth-child(3) #rightPage #detailOne > div:nth-child(1) > p {
+#pilgrimage_pageTwo > div:nth-child(3) #rightPage #detailOne > div:nth-child(1) > p {
   width: 50vw;
   height: 20vh;
   text-align: center;
   line-height: 40px;
 }
-#filgrimage_pageTwo > div:nth-child(3) #rightPage #pageTwo {
+#pilgrimage_pageTwo > div:nth-child(3) #rightPage #pageTwo {
   width: 70vw;
   height: 70vh;
   background-color: #222;
 }
-#filgrimage_pageTwo > div:nth-child(3) #rightPage #detailTwo {
+#pilgrimage_pageTwo > div:nth-child(3) #rightPage #detailTwo {
   width: 70vw;
   height: 30vh;
   background-color: #ccc;
@@ -195,7 +195,7 @@
   align-items: center;
   justify-content: center;
 }
-#filgrimage_pageTwo > div:nth-child(3) #rightPage #detailTwo > div:nth-child(1) {
+#pilgrimage_pageTwo > div:nth-child(3) #rightPage #detailTwo > div:nth-child(1) {
   width: 50vw;
   height: 30vh;
   display: flex;
@@ -204,24 +204,24 @@
   justify-content: center;
   text-align: center;
 }
-#filgrimage_pageTwo > div:nth-child(3) #rightPage #detailTwo > div:nth-child(1) > h1 {
+#pilgrimage_pageTwo > div:nth-child(3) #rightPage #detailTwo > div:nth-child(1) > h1 {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 10vh;
 }
-#filgrimage_pageTwo > div:nth-child(3) #rightPage #detailTwo > div:nth-child(1) > p {
+#pilgrimage_pageTwo > div:nth-child(3) #rightPage #detailTwo > div:nth-child(1) > p {
   width: 50vw;
   height: 20vh;
   text-align: center;
   line-height: 40px;
 }
-#filgrimage_pageTwo > div:nth-child(3) #rightPage #pageThree {
+#pilgrimage_pageTwo > div:nth-child(3) #rightPage #pageThree {
   width: 70vw;
   height: 70vh;
   background-color: #222;
 }
-#filgrimage_pageTwo > div:nth-child(3) #rightPage #detailThree {
+#pilgrimage_pageTwo > div:nth-child(3) #rightPage #detailThree {
   width: 70vw;
   height: 30vh;
   background-color: #ccc;
@@ -230,7 +230,7 @@
   align-items: center;
   justify-content: center;
 }
-#filgrimage_pageTwo > div:nth-child(3) #rightPage #detailThree > div:nth-child(1) {
+#pilgrimage_pageTwo > div:nth-child(3) #rightPage #detailThree > div:nth-child(1) {
   width: 50vw;
   height: 30vh;
   display: flex;
@@ -239,24 +239,24 @@
   justify-content: center;
   text-align: center;
 }
-#filgrimage_pageTwo > div:nth-child(3) #rightPage #detailThree > div:nth-child(1) > h1 {
+#pilgrimage_pageTwo > div:nth-child(3) #rightPage #detailThree > div:nth-child(1) > h1 {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 10vh;
 }
-#filgrimage_pageTwo > div:nth-child(3) #rightPage #detailThree > div:nth-child(1) > p {
+#pilgrimage_pageTwo > div:nth-child(3) #rightPage #detailThree > div:nth-child(1) > p {
   width: 50vw;
   height: 20vh;
   text-align: center;
   line-height: 40px;
 }
-#filgrimage_pageTwo > div:nth-child(3) #rightPage #pageFour {
+#pilgrimage_pageTwo > div:nth-child(3) #rightPage #pageFour {
   width: 70vw;
   height: 70vh;
   background-color: #222;
 }
-#filgrimage_pageTwo > div:nth-child(3) #rightPage #detailFour {
+#pilgrimage_pageTwo > div:nth-child(3) #rightPage #detailFour {
   width: 70vw;
   height: 30vh;
   background-color: #ccc;
@@ -265,7 +265,7 @@
   align-items: center;
   justify-content: center;
 }
-#filgrimage_pageTwo > div:nth-child(3) #rightPage #detailFour > div:nth-child(1) {
+#pilgrimage_pageTwo > div:nth-child(3) #rightPage #detailFour > div:nth-child(1) {
   width: 50vw;
   height: 30vh;
   display: flex;
@@ -274,24 +274,24 @@
   justify-content: center;
   text-align: center;
 }
-#filgrimage_pageTwo > div:nth-child(3) #rightPage #detailFour > div:nth-child(1) > h1 {
+#pilgrimage_pageTwo > div:nth-child(3) #rightPage #detailFour > div:nth-child(1) > h1 {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 10vh;
 }
-#filgrimage_pageTwo > div:nth-child(3) #rightPage #detailFour > div:nth-child(1) > p {
+#pilgrimage_pageTwo > div:nth-child(3) #rightPage #detailFour > div:nth-child(1) > p {
   width: 50vw;
   height: 20vh;
   text-align: center;
   line-height: 40px;
 }
-#filgrimage_pageTwo > div:nth-child(3) #rightPage #pageFive {
+#pilgrimage_pageTwo > div:nth-child(3) #rightPage #pageFive {
   width: 70vw;
   height: 70vh;
   background-color: #222;
 }
-#filgrimage_pageTwo > div:nth-child(3) #rightPage #detailFive {
+#pilgrimage_pageTwo > div:nth-child(3) #rightPage #detailFive {
   width: 70vw;
   height: 30vh;
   background-color: #ccc;
@@ -300,7 +300,7 @@
   align-items: center;
   justify-content: center;
 }
-#filgrimage_pageTwo > div:nth-child(3) #rightPage #detailFive > div:nth-child(1) {
+#pilgrimage_pageTwo > div:nth-child(3) #rightPage #detailFive > div:nth-child(1) {
   width: 50vw;
   height: 30vh;
   display: flex;
@@ -309,24 +309,24 @@
   justify-content: center;
   text-align: center;
 }
-#filgrimage_pageTwo > div:nth-child(3) #rightPage #detailFive > div:nth-child(1) > h1 {
+#pilgrimage_pageTwo > div:nth-child(3) #rightPage #detailFive > div:nth-child(1) > h1 {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 10vh;
 }
-#filgrimage_pageTwo > div:nth-child(3) #rightPage #detailFive > div:nth-child(1) > p {
+#pilgrimage_pageTwo > div:nth-child(3) #rightPage #detailFive > div:nth-child(1) > p {
   width: 50vw;
   height: 20vh;
   text-align: center;
   line-height: 40px;
 }
-#filgrimage_pageTwo > div:nth-child(3) #rightPage #pageFSix {
+#pilgrimage_pageTwo > div:nth-child(3) #rightPage #pageFSix {
   width: 70vw;
   height: 70vh;
   background-color: #222;
 }
-#filgrimage_pageTwo > div:nth-child(3) #rightPage #detailSix {
+#pilgrimage_pageTwo > div:nth-child(3) #rightPage #detailSix {
   width: 70vw;
   height: 30vh;
   background-color: #ccc;
@@ -335,7 +335,7 @@
   align-items: flex-start;
   justify-content: center;
 }
-#filgrimage_pageTwo > div:nth-child(3) #rightPage #detailSix > div:nth-child(1) {
+#pilgrimage_pageTwo > div:nth-child(3) #rightPage #detailSix > div:nth-child(1) {
   width: 30vw;
   height: 15vh;
   display: flex;
@@ -344,7 +344,7 @@
   justify-content: space-around;
   text-align: center;
 }
-#filgrimage_pageTwo > div:nth-child(3) #rightPage #detailSix > div:nth-child(2) {
+#pilgrimage_pageTwo > div:nth-child(3) #rightPage #detailSix > div:nth-child(2) {
   width: 31vw;
   height: 5vh;
   display: flex;
@@ -352,7 +352,7 @@
   justify-content: space-around;
   margin-left: 50px;
 }
-#filgrimage_pageTwo > div:nth-child(3) #rightPage #detailSix > div:nth-child(2) > p {
+#pilgrimage_pageTwo > div:nth-child(3) #rightPage #detailSix > div:nth-child(2) > p {
   width: 7vw;
   font-size: 1.5rem;
   text-align: center;

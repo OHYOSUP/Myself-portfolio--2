@@ -44,7 +44,7 @@
 
 // page1
 
-#filgrimage_pageOne{
+#pilgrimage_pageOne{
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -84,47 +84,20 @@
       background-image: url(/Image/jeonteo.svg);
       background-size: cover;
     }
-
-    // &>img{
-    //   width: 16.6vw;
-    //   height: 100vh;
-    //   background-size: cover;
-    // }
-
   }
-
-    // &>div:nth-child(1){
-    //   background-image: url(/);
-    // }
-    // &>div:nth-child(2){
-    //   background-image: url(/Image/byun.svg);
-    // }
-    // &>div:nth-child(3){
-    //   background-image: url(/Image/leemin.svg);
-    // }
-    // &>div:nth-child(4){
-    //   background-image: url(/Image/gugyo.svg);
-    // }
-    // &>div:nth-child(5){
-    //   background-image: url(/Image/jeonteo.svg);
-    // }
-    // &>div:nth-child(6){
-    //   background-image: url(/Image/untae.svg);
-    // }
+}
 
 span{
   opacity: 0;
 }
-
 span.fade{
   opacity: 1;
   transition: 0.7s ease;
   transform: translateX(50px);
   color: #BA3737;
-}
-}
+} 
 
-#filgrimage_pageTwo{
+#pilgrimage_pageTwo{
   width: 100vw;
   height: 100vh;
   overflow: scroll;

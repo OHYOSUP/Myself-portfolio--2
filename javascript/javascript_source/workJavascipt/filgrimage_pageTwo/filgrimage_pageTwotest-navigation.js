@@ -3,28 +3,29 @@ const item = document.querySelectorAll('.items');
 const pageOne = document.getElementById('pageOne');
 
 
-export const navEvent = function navEvent(eventType){
+export const navEvent = function navEvent(eventType, color, animationTime, fontWeight){
 item.forEach((elem)=>{
   elem.addEventListener(eventType, ()=>{
     cursor : 'hand';
-    elem.style.color = '#BA3737';
-    elem.style.transition = '0.3s';
-    elem.style.fontWeight = 1000;
+    elem.style.color = color;
+    elem.style.transition = animationTime;
+    elem.style.fontWeight = fontWeight;
   });
 })
 }
 
-export const navEventSecond = function navEventSecond(eventType){
+export const navEventSecond = function navEventSecond(eventType, color, animationTime, fontWeight){
   item.forEach((elem)=>{
     elem.addEventListener(eventType, ()=>{
-      elem.style.color = '#a5a5a5';
-      elem.style.transition = '0.3s';
-      elem.style.fontWeight = 1000;
+      elem.style.color = color;
+      elem.style.transition = animationTime;
+      elem.style.fontWeight = fontWeight;
     });
   })
   }
 
-  
+
+
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
           e.preventDefault();

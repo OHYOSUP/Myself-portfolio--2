@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #root{
+      background-color: #ccc;
+      width: 100vw;
+      height: 500vh;
+    }
+    span{
+      position: fixed;
+    }
+  </style>
+</head>
+<body>
+  <div id="root">
+    <span></span>
+
+  </div>
+
+
+  <script>
+
+        const root = document.getElementById('root');
+        const a = document.querySelector('span');
+
+
+    // let posY = 0
+  let count = 0;
+  let tmdnlcl = true;
+  
+  
+
+  
+  function divCreate(){
+    const box = document.createElement('div');
+    const notion = document.createElement('span');
+    
+    root.appendChild(box);
+    box.appendChild(notion);
+    box.style.width = '100px';
+    box.style.height = '100px';
+    // box.style.backgroundColor = '#fff'
+    box.style.position = 'fixed';
+  }
+  
+  
+  
+  // divCreate();
+  let testcount = 0;
+  let backgroundColorValue = ['#fff', 'blue', 'red'];
+
+    window.addEventListener('wheel', ()=>{
+      testcount++;
+      console.log(testcount);
+    count = window.pageYOffset;
+    
+    if(count>=300 && tmdnlcl === true){
+      
+      divCreate();
+      tmdnlcl = false;
+      // console.log(root.children[0]);
+      const boxElem = root.children[1];
+      const textElem = root.children[0];
+      textElem.innerHTML = count;
+
+
+      let i = 0;
+
+  if(count < 500){
+    i = 0;
+    boxElem.style.backgroundColor = `backgroundColorValue&{i}`;
+  }
+  if(count >= 500){
+    i = 1;
+    boxElem.style.backgroundColor = `backgroundColorValue[&{i}]`;
+  }
+
+  if(count >= 1000){
+    i = 2;
+    boxElem.style.backgroundColor = `backgroundColorValue[&{i}]`;
+  }
+}
+});
+
+
+
+
+  </script>
+</body>
+</html>
