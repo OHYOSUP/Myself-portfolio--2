@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+  canvas{
+  border: 3px solid grey;
+  background-image: radial-gradient(#222222,#000000);
+}
+body{
+  margin: 0;
+}
+</style>
+</head>
+<body>
+
+  <canvas></canvas>
+
+</body>
+
+
+
+  <!-- <script src="canvas.js"></script> -->
+  <script>
+    var canvas = document.querySelector('canvas');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+// 캔버스의 가로세로값을 창의 가로 세로값으로 설정
+
+
+    var c = canvas.getContext('2d');
+// 캔버스에다가 2d로 그리겠다
+
+//global variables
+
+
+
+// 1. 캔버스의 크기와 기본설정을 정해준다
+
+
+var mouse = {
+  x: innerWidth/2,
+  y: innerHeight/2
+};
+// innerWidth = 창의 가로크기
+// innerHeight = 창의 세로크기
+
+
+
+
+window.addEventListener('mousemove', (event) => {
+    mouse.x = event.x;
+    mouse.y = event.y;
+  }
+);
+// 마우스를 움직이면 창의 가로세로 크기의 2분의 1만큼 움직이겠다
+c.textAlign = 'center';
+// 캔버스에 스타일을 적용할때는 .style 을 쓰면 안된다
+
+// 2. 마우스이벤트를 걸어준다
+
+function Stroke(size){
+  this.size=size;
+  // this의 사이즈는 매개변수size다
+
+  this.x = innerWidth/2;
+  this.y = innerHeight/2;
+  this.random;
+  // random은 무슨 용도인지 모르겠다
+  this.update= ()=>{
+    // updatd => 새로운 값을 매개변수로 사용하여 함수를 실행해라
+    // update의 새로운 값은 다음의 애로우 함수다
+    //making strokes bigger and bigger, creating 3d effect
+    c.font = ''+this.size+'px arial';
+    // arial은 어떤 기본 설정값은것 같은데../ 앞의 ''은 무슨 말인지 모르겠음
+    //change the position of the strokes based on mouse position
+    this.x = (innerWidth/2-mouse.x)*this.size/140;
+    this.y = (innerHeight/2-mouse.y)*this.size/140;
+    // 창의 크기를 2로 나눈값에서 마우스x축 위치를 빼고 this 사이즈를 140으로 나눈것 만큼 곱하면? 
+    // (innerWidth/2-mouse.x) 이거는 창의 절반을 기준으로 마우스의 위치값의 기준을 잡은거고
+    // this.size/140;=> 이거는 그 마우스 위치와 반대방향으로 텍스트를 보내는 값이다
+    //make de distant strokes brighter, creating light effect
+    c.strokeStyle = 'rgba(255,255,255,'+(1/this.size)+')';
+    // c.strokeStyle = 'rgba(255,255,255,(1/this.size))';
+    // => 색 설정해주고 알파값을 this.size에 따라 점점 밝게 하는 것
+    //focus one of the biggest strokes
+    if(this.size==145){
+      c.strokeStyle = 'rgba(255,255,255,0.8)';
+    }
+    // 사이즈가 145를 넘어가면 알파값은 0.8 이상 높아지지 않도록
+    //create perspective 3d effect distributing where the strokes are written
+    c.strokeText("CINEMA", this.x+innerWidth/2, this.y+innerHeight/2);
+    // strokeText('text', x위치, y위치)
+  }
+  
+  
+}
+//iniciate stroke array
+var strokeArray=[];
+// 배열로 만들어서
+function init(){
+  for(i=0;i<150;i++){
+    strokeArray.push(new Stroke(i));
+  }
+}
+
+init();
+// update strokes position
+function animate(){
+  requestAnimationFrame(animate);
+  // setTimeout()과 비슷함, animate함수를 반복실행해라
+  c.clearRect(0,0,window.innerWidth,window.innerHeight);
+  // canvas의 내용을 지우는 것 clearRect(x, y, width, height)
+  for(i=0;i<strokeArray.length;i++){
+    strokeArray[i].update();
+    // updatd => 새로운 값을 매개변수로 사용하여 함수를 실행해라
+    // 여기서는 위의 init의 i값을 새로운 i 값으로 덮어쓰라는 뜻
+  }
+}
+
+
+animate();
+  </script>
+</html>

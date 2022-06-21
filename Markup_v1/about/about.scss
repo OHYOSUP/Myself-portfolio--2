@@ -1,0 +1,319 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+#root{
+  width: 100vw;
+
+  background-image: url(paper.png);
+  #header{
+    width: 100vw;
+    height: 10vh;
+    // border: 1px solid black;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    font-size: 1.5rem;
+
+    &>div:nth-child(1){
+      width: 30vw;
+      height: 10vh;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+// header
+
+&>div:nth-child(2){
+  width: 100vw;
+  height: 20vh;
+  // background-color: #ccc;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &>div:nth-child(1){
+    width: 3vw;
+    height: 3vw;
+    background-color: #000;
+  }
+}
+// 랜턴
+#text{
+  width: 100vw;
+  height: 60vh;
+  // background-color: #222;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  &>div:nth-child(1){
+    width: 40vw;
+    height: 10vh;
+    // border: 1px solid red;
+    color: #027D67;
+    font-family: 'Tiro Tamil', serif;
+    font-size: 2rem;
+    letter-spacing: 10px;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+  }
+  &>div:nth-child(2){
+    width: 30vw;
+    height: 10vh;
+    color: #027D67;
+    font-size: 1.8rem;
+    font-family: 'Great Vibes', cursive;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+// text
+
+#screen{
+  width: 100vw;
+  height: 100vh;
+  // background-color: #ccc;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &>div:nth-child(1){
+    width: 80vw;
+    height: 70vh;
+    background-color: #ccc;
+    // font-size: 3rem;
+    color : #027D67;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    &>div:nth-child(1){
+      position: relative;
+      top: 10vh;
+      left: 3vw;
+    font-family: 'Tiro Tamil', serif;
+      
+      &>h3{
+        font-size: 4rem;
+      }
+      &>p{
+  
+        width: 40vw;
+        font-size: 1.5rem;
+    }
+    }
+}
+}
+// screen div
+
+#posters{
+  width: 100vw;
+  height: 80vh;
+  // background-color: #555;
+
+  display: flex;
+  justify-content: space-around;
+  &>div:nth-child(1){
+    width: 30vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    // background-color: #271414;
+    &>div:nth-child(1){
+
+      width: 20vw;
+      height: 50vh;
+      background-color: #ccc;
+      
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      color: #027D67;
+      font-size: 3rem;
+    font-family: 'Tiro Tamil', serif;
+
+      &>p{
+        
+        position: absolute;
+        // width: 30vw;
+        top: 35vh;
+      }
+    }
+  }
+  // #1
+  &>div:nth-child(2){
+    width: 30vw;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: 'Tiro Tamil', serif;
+
+    // background-color: #271414;
+    &>div:nth-child(1){
+
+      width: 20vw;
+      height: 50vh;
+      background-color: #ccc;
+      
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      color: #027D67;
+      font-size: 3rem;
+      &>p{
+        
+        position: absolute;
+        width: 30vw;
+        top: 35vh;
+        left: -1vw;
+      }
+    }
+  }
+  // #2
+  &>div:nth-child(3){
+    width: 30vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: 'Tiro Tamil', serif;
+
+    // background-color: #271414;
+    &>div:nth-child(1){
+
+      width: 20vw;
+      height: 50vh;
+      background-color: #ccc;
+      
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      color: #027D67;
+      font-size: 3rem;
+
+      &>p{
+        position: absolute;
+        width: 30vw;
+        top: 36vh;
+        left: 4vw;
+      }
+    }
+  }
+  // #3
+}
+// posters end
+
+
+#hobbies{
+width: 100vw;
+height: 100vh;
+// background-color: #777;
+
+display: flex;
+align-items: center;
+
+&>div:nth-child(1){
+width: 50vw;
+height: 80vh;
+display: flex;
+align-items: center;
+justify-content: center;
+
+// border: 1px solid red;
+
+&>div:nth-child(1){
+  width: 30vw;
+  height: 70vh;
+  // border: 1px solid blue;
+
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+
+  &>div:nth-child(1){
+    width: 20vw;
+    height: 10vh;
+    font-family: 'Tiro Tamil', serif;
+    color: #027D67;
+
+    &>h3{
+      font-size: 3rem;
+    }
+    &>p{
+      width: 20vw;
+      height: 10vh;
+      display: flex;
+      align-items: center;
+    }
+  }
+  &>div:nth-child(2){
+    width: 20vw;
+    height: 50vh;
+    background-color: #555;
+    
+  }
+}
+}
+
+&>div:nth-child(2){
+  width: 50vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Tiro Tamil', serif;
+  color: #027D67;
+  
+  // border: 1px solid red;
+
+
+
+  &>div:nth-child(1){
+    width: 30vw;
+    height: 70vh;
+    // border: 1px solid blue;
+  
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  
+    &>div:nth-child(2){
+      width: 20vw;
+      height: 12vh;
+      &>h3{
+        font-size: 3rem;
+      }
+      &>p{
+        width: 20vw;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+      }
+    }
+    &>div:nth-child(1){
+      width: 20vw;
+      height: 50vh;
+      background-color: #555;
+      
+    }
+  }
+}
+}
+}
+
+
+

@@ -1,0 +1,389 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100vw;
+  background-color: #292929;
+}
+#root #header {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: flex-end;
+  color: #fff;
+  font-size: 1.5rem;
+}
+#root #header > div:nth-child(1) {
+  width: 40vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#root #bilboard {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root #bilboard > div:nth-child(1) {
+  width: 70vw;
+  height: 70vh;
+  background-image: url(group106.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#root #bilboard > div:nth-child(1) > div:nth-child(1) {
+  width: 50vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#root #bilboard > div:nth-child(1) > div:nth-child(1) > p {
+  color: #fff;
+  font-size: 1.5rem;
+  font-style: italic;
+  letter-spacing: 6px;
+}
+#root #bilboard > div:nth-child(1) > div:nth-child(1) > h1 {
+  color: #fff;
+}
+#root #bilboard > div:nth-child(1) > div:nth-child(1) > h1 > span {
+  color: #E1B92A;
+  font-style: italic;
+}
+#root #bilboard > div:nth-child(1) > div:nth-child(1) > h2 {
+  color: #fff;
+  font-size: 3.5rem;
+}
+#root #scroll {
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+}
+#root #scroll > div:nth-child(1) {
+  width: 150vw;
+  height: 50vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  left: 25vw;
+}
+#root #scroll > div:nth-child(1) > div {
+  width: 40vw;
+  height: 50vh;
+  margin-right: 20px;
+  background-color: rgb(53, 53, 53);
+}
+#root #scroll > div:nth-child(1) > div:nth-child(1) {
+  background-image: url(pilgrimage.png);
+  background-size: cover;
+}
+#root #scroll > div:nth-child(1) > div:nth-child(2) {
+  background-image: url(2.png);
+  background-size: 55rem;
+}
+#root #nav {
+  width: 100vw;
+  height: 1vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root #nav > div:nth-child(1) {
+  width: 15vw;
+  height: 1vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#root #nav > div:nth-child(1) > div {
+  width: 1vw;
+  height: 1vw;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+#root #indiFilmLanding {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(actorsposter.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: 5rem;
+}
+#root #indiFilmLanding > div:nth-child(1) {
+  margin: 40px;
+  color: #fff;
+}
+#root #indifilmMain {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(actorsposter.png);
+  background-size: cover;
+  display: flex;
+}
+#root #indifilmMain > div:nth-child(1) {
+  width: 20vw;
+  height: 100vh;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+#root #indifilmMain > div:nth-child(1) > div:nth-child(1) {
+  width: 20vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+#root #indifilmMain > div:nth-child(1) > div:nth-child(1) > h3 {
+  font-size: 3.5rem;
+  font-weight: 100;
+}
+#root #indifilmMain > div:nth-child(1) > div:nth-child(1) > p {
+  width: 20vw;
+  height: 30vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  line-height: 30px;
+}
+#root #indifilmMain > div:nth-child(2) {
+  width: 80vw;
+  height: 100vh;
+  background-color: #ccc;
+}
+#root #indifilmMain > div:nth-child(2) > div:nth-child(1) {
+  width: 80vw;
+  height: 10vh;
+}
+#root #indifilmMain > div:nth-child(2) > div:nth-child(1) > ul {
+  width: 60vw;
+  height: 10vh;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 3rem;
+  color: rgb(150, 150, 150);
+}
+#root #indifilmMain > div:nth-child(2) > div:nth-child(1) > ul > li:nth-child(1) {
+  color: #000;
+}
+#root #indifilmMain > div:nth-child(2) > div:nth-child(2) {
+  width: 80vw;
+  height: 90vh;
+  display: flex;
+}
+#root #indifilmMain > div:nth-child(2) > div:nth-child(2) > div {
+  width: 40vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#root #indifilmMain > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) {
+  width: 39vw;
+  height: 40vh;
+  background-color: rgb(158, 158, 158);
+}
+#root #indifilmMain > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
+  width: 37vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#root #indifilmMain > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > h3 {
+  font-size: 2rem;
+}
+#root #indifilmMain > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > p {
+  width: 37vw;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  line-height: 30px;
+}
+#root #indifilmMain > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
+  width: 40vw;
+  height: 90vh;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+}
+#root #indifilmMain > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) {
+  width: 37vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#root #indifilmMain > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > h3 {
+  font-size: 2rem;
+}
+#root #indifilmMain > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > p {
+  width: 37vw;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  line-height: 30px;
+}
+#root #indifilmMain > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
+  width: 39vw;
+  height: 40vh;
+  background-color: rgb(158, 158, 158);
+}
+#root #hanbokLanding {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(1.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: 5rem;
+}
+#root #hanbokLanding > div:nth-child(1) {
+  margin: 40px;
+  color: #fff;
+}
+#root #hanbokMain {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(1.png);
+  background-size: cover;
+  display: flex;
+}
+#root #hanbokMain > div:nth-child(1) {
+  width: 20vw;
+  height: 100vh;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+#root #hanbokMain > div:nth-child(1) > div:nth-child(1) {
+  width: 20vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+#root #hanbokMain > div:nth-child(1) > div:nth-child(1) > h3 {
+  font-size: 3.5rem;
+  font-weight: 100;
+}
+#root #hanbokMain > div:nth-child(1) > div:nth-child(1) > p {
+  width: 20vw;
+  height: 30vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  line-height: 30px;
+}
+#root #hanbokMain > div:nth-child(2) {
+  width: 80vw;
+  height: 100vh;
+  background-color: #ccc;
+}
+#root #hanbokMain > div:nth-child(2) > div:nth-child(1) {
+  width: 80vw;
+  height: 10vh;
+}
+#root #hanbokMain > div:nth-child(2) > div:nth-child(1) > ul {
+  width: 60vw;
+  height: 10vh;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 3rem;
+  color: rgb(150, 150, 150);
+}
+#root #hanbokMain > div:nth-child(2) > div:nth-child(1) > ul > li:nth-child(1) {
+  color: #000;
+}
+#root #hanbokMain > div:nth-child(2) > div:nth-child(2) {
+  width: 80vw;
+  height: 90vh;
+  display: flex;
+}
+#root #hanbokMain > div:nth-child(2) > div:nth-child(2) > div {
+  width: 40vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#root #hanbokMain > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) {
+  width: 39vw;
+  height: 40vh;
+  background-color: rgb(158, 158, 158);
+}
+#root #hanbokMain > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
+  width: 37vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#root #hanbokMain > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > h3 {
+  font-size: 2rem;
+}
+#root #hanbokMain > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > p {
+  width: 37vw;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  line-height: 30px;
+}
+#root #hanbokMain > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
+  width: 40vw;
+  height: 90vh;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+}
+#root #hanbokMain > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) {
+  width: 37vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#root #hanbokMain > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > h3 {
+  font-size: 2rem;
+}
+#root #hanbokMain > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > p {
+  width: 37vw;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  line-height: 30px;
+}
+#root #hanbokMain > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
+  width: 39vw;
+  height: 40vh;
+  background-color: rgb(158, 158, 158);
+}/*# sourceMappingURL=work.css.map */

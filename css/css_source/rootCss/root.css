@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100vw;
+  background-color: #131423;
+  z-index: 0;
+  overflow: hidden;
+}/*# sourceMappingURL=root.css.map */

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="basic_style.css">
+  <title>Document</title>
+  <style>
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+
+.active2{
+  transform: translate(0,-2.4vh);
+  transition: 0.5s;
+  transition-delay: 0.15s;
+
+}
+
+.active3{
+  transform: translate(0,-4.8vh);
+  transition: 0.5s;
+  transition-delay: 0.08s;
+
+}
+.active4{
+  transform: translate(0,-7.3vh);
+  transition: 0.5s;
+  
+  
+
+}
+
+.active6{
+transform: translate(0,-11vh);
+transition: 0.5s;
+transition-delay: 0.08s;
+
+
+  
+}
+
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script>
+    const root = document.getElementById('root');
+
+    root.style.width = '100vw'
+    root.style.height = '100vh'
+    root.style.backgroundColor = '#1B120D';
+
+    const container = document.createElement('div');
+    root.appendChild(container);
+
+    container.style.width  = '100vw';
+    container.style.height  = '10vh';
+    container.style.display = 'flex';
+    container.style.justifyContent = 'flex-end';
+    
+
+    const hamberger = ["ABOUT", 'WORK', 'CONTACT'];
+    const ul = document.createElement('ul');
+    const box = document.createElement('div');
+    
+    ul.setAttribute('id', 'menu');
+    
+    container.appendChild(ul);
+    ul.appendChild(box);
+
+
+    box.style.width = '94vw'
+    box.style.height = '10vh'
+    box.style.backgroundColor = '#1B120D';
+    
+    box.style.position = 'absolute';
+    box.style.left = '0';
+    // box.style.top = '0';
+
+
+
+
+    ul.style.listStyleType = "none";
+    ul.style.fontSize = '1.5rem';
+    ul.style.display = "flex";
+    ul.style.color = '#7D7D7D';
+
+    hamberger.forEach((value)=>{
+      const li = document.createElement('li');
+      li.textContent = value;
+      ul.appendChild(li);
+
+      li.style.width = '5vw';
+      li.style.margin = "40px";
+      li.style.marginRight = "60px";
+      
+    })
+    
+    const linebox = document.createElement('div');
+      container.appendChild(linebox);
+      linebox.setAttribute('id', 'linebox');
+      linebox.setAttribute('onclick', 'toggle()')
+
+      linebox.style.width = '5vw';
+      linebox.style.height = '10vh';
+
+      linebox.style.display = 'flex';
+      linebox.style.justifyContent = 'space-around';
+      linebox.style.alignItems = 'center';
+      linebox.style.flexDirection = 'column';
+      linebox.style.position = 'relative';
+
+
+      
+    const line1 = document.createElement('div');
+    const line2 = document.createElement('div');
+    const line3 = document.createElement('div');
+    const line4 = document.createElement('div');
+    const line5 = document.createElement('div');
+
+      
+    linebox.append(line1);
+    line1.setAttribute('id', 'line1')
+    linebox.append(line2);
+    line2.setAttribute('id', 'line2')
+    linebox.append(line3);
+    line3.setAttribute('id', 'line3')
+    linebox.append(line4);
+    line4.setAttribute('id', 'line4')
+    // linebox.append(line5);
+    // line5.setAttribute('id', 'line5')
+
+
+
+    // line.style.top = '30px';
+    let lines = linebox.children;
+    console.log(lines);
+let hambergers = Array.from(lines);
+console.log(Array.isArray(hambergers));
+
+
+hambergers.forEach((elems)=>{
+  
+  elems.style.width = '2vw';
+  elems.style.height = '0.2vh';
+  elems.style.backgroundColor = '#ccc';
+  
+  elems.style.position = 'absolue';
+  elems.style.marginTop = '1vh';
+
+
+  
+});
+
+
+
+function toggle (){
+  // line1.classList.toggle('active1');
+  line2.classList.toggle('active2');
+  line3.classList.toggle('active3');
+  line4.classList.toggle('active4');
+  line5.classList.toggle('active5');
+  box.classList.toggle('active6');
+
+}
+
+
+
+
+  </script>
+</body>
+</html>

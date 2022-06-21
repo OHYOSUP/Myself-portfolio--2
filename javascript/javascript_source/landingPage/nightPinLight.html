@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root">
+    <div id="box"></div>
+  </div>
+
+  <script>
+    const root = document.getElementById('root');
+    const box= document.getElementById('box');
+
+    root.style.width = '100vw';
+    root.style.height = '200vh';
+
+    
+
+    // root.style.backgroundColor = '#ccc';
+    root.style.display = 'flex';
+    root.style.justifyContent = 'center';
+    root.style.alignItems = 'center';
+    box.style.width = '25vw';
+    box.style.height = '25vw';
+    box.style.borderRadius = '50%';
+    // box.style.backgroundColor = 'yellow';
+    // box.style.mixBlendMode - 'transparent';
+    box.style.position = 'absolute';
+    box.style.left = 0;
+    box.style.top = 0;
+    box.style.transform = 'translate(-50%, -50%)';
+
+
+
+
+    let colors = ["#F0DA31", "#F01886", "#F01372"];
+
+
+    function colorChange(){
+      let c1 = colors[Math.floor(Math.random()*colors.length)];
+      let c2 = colors[Math.floor(Math.random()*colors.length)];
+
+      box.style.background = `linear-gradient(90deg, ${c1}, ${c2})`;
+
+    }
+
+
+    export const nightLight = window.addEventListener('mousemove', (event)=>{
+      let mouseX = event.clientX;
+      let mouseY = event.clientY;
+      // console.log(mouseX);
+
+      box.style.left = innerWidth - mouseX + 'px';
+      box.style.top = innerHeight - mouseY + 'px';
+
+      colorChange(box);
+    });
+  </script>
+</body>
+</html>

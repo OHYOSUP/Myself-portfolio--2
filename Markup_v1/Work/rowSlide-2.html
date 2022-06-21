@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #root{
+      width: 50vw;
+      height: 60vh;
+      /* overflow: hidden; */
+
+    }
+    #container{
+      width: 150vw;
+      height: 50vh;
+      display: flex;
+      position: relative;
+
+    }
+    #container>div{
+      width: 50vw;
+      height: 50vh;
+      margin-right: 20px;
+    }
+
+    #container>div:nth-child(1){
+      background-color: #333;
+    }
+    #container>div:nth-child(2){
+      background-color: #777;
+    }#container>div:nth-child(3){
+      background-color: #999;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div id="container">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <button id="leftBtn">left</button>
+    <button id="rightBtn">right</button>
+  </div>
+
+
+  <script>
+    const root = document.getElementById('root');
+    const box = document.querySelectorAll('#root>div');
+    const rightBtn = document.getElementById('rightBtn');
+    const leftBtn = document.getElementById('leftBtn');
+    const container = document.getElementById('container');
+
+    // console.log(box);
+
+    let index = 0;
+    let position = 0;
+    let imgWidth = 50;
+
+
+    // container.addEventListener('wheel', ()=>{
+    //   if(index < 4){
+    //     rightBtn.removeAttribute('disabled');
+    //     index++;
+    //     console.log(index);
+    //     position -= imgWidth;
+    //     container.style.transform = `translateX(${position}vw)`;
+    //     container.style.transition = '0.2s';
+    //   }
+    //   if(index > 3){
+    //     rightBtn.setAttribute('disabled', 'true');
+    //   }
+    // });
+
+
+    // container.addEventListener('wheel', (e)=>{
+    //   if(e.deltaY === 100){
+    //     index++;
+    //     console.log(index);
+    //     position -= imgWidth;
+    //     container.style.transform = `translateX(${position}vw)`;
+    //     container.style.transition = '0.2s';
+        
+    //   }
+
+    // });
+
+    // container.addEventListener('wheel', (e)=>{
+    //   console.log(e.deltaY);
+    //   index--;
+    //   if(e.deltaY === -100){
+    //     position += imgWidth;
+    //     container.style.transform = `translateX(${position}vw)`;
+    //     container.style.transition = '0.2s';
+    //   }
+
+
+    // })
+
+
+    // container.addEventListener('wheel', (e)=>{
+    //   e.preventDefault();
+
+    //   const getY = event.deltaY;
+
+    //   console.log(window.pageXOffset);
+
+    //   let beforeValue = window.pageXOffset;
+    //   window.scrollBy(getY,0);
+    //   container.style.transition = '0.2s';
+      
+    //   let nextValue = window.pageXOffset;
+
+    // });
+
+  </script>
+</body>
+</html>

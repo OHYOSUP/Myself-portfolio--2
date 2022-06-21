@@ -1,0 +1,52 @@
+#landing {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#131423, #131423, #131423, #131423, #383733, #45433D, #9D955E);
+  overflow: hidden;
+}
+#landing #backdropBox {
+  width: 100vw;
+  height: 80vh;
+  background-size: cover;
+  opacity: 0.2;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+#landing #box {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+#landing #textBox {
+  width: 80vw;
+  height: 50vh;
+  position: absolute;
+  left: 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+  mix-blend-mode: difference;
+  overflow: hidden;
+}
+#landing #textBox > p:nth-child(1) {
+  height: 15vh;
+  font-size: 6rem;
+  font-weight: 1000;
+  color: rgb(255, 255, 255);
+}
+#landing #textBox > p:nth-child(2) {
+  width: 50vw;
+  font-size: 2rem;
+  text-align: left;
+  mix-blend-mode: difference;
+  line-height: 60px;
+  color: rgb(255, 255, 255);
+}/*# sourceMappingURL=landing.css.map */

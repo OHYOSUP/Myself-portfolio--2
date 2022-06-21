@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <canvas></canvas>
+  <script>
+const canvas = document.querySelector('canvas');
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+let c = canvas.getContext('2d');
+c.beginPath();
+c.arc(500,500,300,0,5*Math.PI);
+c.stroke();
+// c.fillStyle = "blue";
+c.fill();
+// c.style.backgroundColor = '#000';
+console.dir(canvas);
+
+let mouse = {
+  x : innerWidth/2,
+  y : innerHeight/2
+};
+
+window.addEventListener('mousemove', (event)=>{
+  mouse.x = event.x;
+  mouse.y = event.y;
+  // console.log(event);
+});
+
+function Circle(size){
+  this.size = size;
+
+  this.x = innerWidth/2;
+  this.y = innerHeight/2;
+
+  this.update = ()=>{
+    this.x = (innerWidth/2-mouse.x)*this.size/140;
+    this.y = (innerHeight/2-mouse.y)*this.size/140;
+
+    c.fillStyle = 'rgba(255,255,255,'+(1/this.size)+')';
+
+    
+    if(this.size ===145){
+      c.fillStyle = 'rgba(255,255,255,0.8)';
+      
+    }
+
+  }
+
+}
+
+let fillArray = [];
+
+function init(){
+  for(i=0; i<150; i++){
+    fillArray.push(new Circle(i));
+  }
+}
+init();
+
+function animate(){
+  requestAnimationFrame(animate);
+
+  c.clearRect(0,0,window.innerWidth,window.innerHeight);
+  for(i=0; i<fillArray.length; i++){
+    fillArray[i].update();
+  }
+}
+
+animate();
+console.log(animate());
+
+  </script>
+</body>
+</html>

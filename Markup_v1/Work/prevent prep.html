@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .one{
+      width: 300px;
+      height: 300px;
+      background-color: #999;
+    }
+
+    .two{
+      width: 200px;
+      height: 200px;
+      background-color: #555;
+    }
+
+    .three{
+      width: 100px;
+      height: 100px;
+      background-color: #222;
+    }
+
+
+  </style>
+</head>
+<body>
+<div class="one">
+  <div class="two">
+    <div class="three">
+
+    </div>
+  </div>
+</div>
+
+  <script>
+    const divs = document.querySelectorAll('div');
+
+    divs.forEach(function(div){
+      div.addEventListener('click', logEvent, {
+        capture : true
+      });
+    });
+// 함수자리 다음에 쉼표가 하나 더 들어갔네. 무슨 뜻이지 저게
+
+    function logEvent(event){
+      console.log(event.currentTarget.className);
+    }
+
+  </script>
+</body>
+</html>

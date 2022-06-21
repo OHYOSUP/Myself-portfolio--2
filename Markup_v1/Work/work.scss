@@ -1,0 +1,455 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100vw;
+  background-color:#292929;
+
+#header{
+  width: 100vw;
+  height: 10vh;
+
+  display: flex;
+  justify-content: flex-end;
+  color: #fff;
+  font-size: 1.5rem;
+  &>div:nth-child(1){
+    width: 40vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+#bilboard{
+  width: 100vw;
+  height: 80vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &>div:nth-child(1){
+    width: 70vw;
+    height: 70vh;
+    // border: 1px solid #fff;
+    background-image: url(group106.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &>div:nth-child(1){
+      width: 50vw;
+      height: 30vh;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      &>p{
+        color: #fff;
+        font-size: 1.5rem;
+        font-style: italic;
+        letter-spacing: 6px;
+      }
+      &>h1{
+        color: #fff;
+        &>span{
+          color: #E1B92A;
+          font-style: italic;
+        }
+      }
+      &>h2{
+        color: #fff;
+        font-size: 3.5rem;
+      }
+    }
+  }
+}
+
+#scroll{
+  width: 100vw;
+  height: 70vh;
+
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+  
+  &>div:nth-child(1){
+    width: 150vw;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    position: absolute;
+    left: 25vw;
+    &>div{
+      width: 40vw;
+      height: 50vh;
+      margin-right: 20px;
+      background-color: rgb(53, 53, 53);
+    }
+    &>div:nth-child(1){
+      background-image: url(pilgrimage.png);
+      background-size: cover;
+    }
+    &>div:nth-child(2){
+      background-image: url(2.png);
+      background-size: 55rem;
+
+    }
+  }
+
+  
+}
+#nav{
+  width: 100vw;
+  height: 1vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &>div:nth-child(1){
+    width: 15vw;
+    height: 1vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &>div{
+      width: 1vw;
+      height: 1vw;
+      background-color: #ccc;
+      border-radius: 50%;
+    }
+  }
+}
+
+#indiFilmLanding{
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url(actorsposter.png);
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  font-size: 5rem;
+  &>div:nth-child(1){
+    margin: 40px;
+    color: #fff;
+  }
+}
+  
+#indifilmMain{
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url(actorsposter.png);
+  background-size: cover;
+
+  display: flex;
+  &>div:nth-child(1){
+    width: 20vw;
+    height: 100vh;
+    backdrop-filter: blur(20px);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    &>div:nth-child(1){
+      width: 20vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      &>h3{
+        font-size: 3.5rem;
+        font-weight: 100;
+      }
+      &>p{
+        width: 20vw;
+        height: 30vh;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        line-height: 30px;
+      }
+    }
+  }
+// 랜딩페이지 왼쪽 페이지
+
+&>div:nth-child(2){
+  width: 80vw;
+  height: 100vh;
+  background-color: #ccc;
+
+  &>div:nth-child(1){
+    width: 80vw;
+    height: 10vh;
+    // border: 1px solid red;
+    &>ul{
+      width: 60vw;
+      height: 10vh;
+      // border: 1px solid blue;
+
+      display: flex;
+      list-style-type: none;
+      justify-content: space-around;
+      align-items: center;
+      font-size: 3rem;
+      color: rgb(150, 150, 150);
+      &>li:nth-child(1){
+        color: #000
+      }
+    }
+  }
+
+  &>div:nth-child(2){
+    width: 80vw;
+    height: 90vh;
+    
+    display: flex;
+    &>div{
+      width: 40vw;
+      height: 90vh;
+      // border: 1px solid red;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &>div:nth-child(1)>div:nth-child(1){
+      width: 39vw;
+      height: 40vh;
+      background-color: rgb(158, 158, 158);
+    }
+    &>div:nth-child(1)>div:nth-child(2){
+      width: 37vw;
+      height: 30vh;
+      // background-color: #777;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      &>h3{
+        font-size: 2rem;
+      }
+      &>p{
+        width: 37vw;
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        line-height: 30px;
+      }
+    }
+
+    &>div:nth-child(2){
+      width: 40vw;
+      height: 90vh;
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: column;
+      align-items: center;
+
+    }
+
+    &>div:nth-child(2)>div:nth-child(1){
+      width: 37vw;
+      height: 30vh;
+      // background-color: #777;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      &>h3{
+        font-size: 2rem;
+      }
+      &>p{
+        width: 37vw;
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        line-height: 30px;
+      }
+    }
+    &>div:nth-child(2)>div:nth-child(2){
+      width: 39vw;
+      height: 40vh;
+      background-color: rgb(158, 158, 158);
+    }
+  }
+}
+}
+// 인디필름
+
+
+
+#hanbokLanding{
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url(1.png);
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  font-size: 5rem;
+  &>div:nth-child(1){
+    margin: 40px;
+    color: #fff;
+  }
+}
+  
+#hanbokMain{
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url(1.png);
+  background-size: cover;
+
+  display: flex;
+  &>div:nth-child(1){
+    width: 20vw;
+    height: 100vh;
+    backdrop-filter: blur(20px);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    &>div:nth-child(1){
+      width: 20vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      &>h3{
+        font-size: 3.5rem;
+        font-weight: 100;
+      }
+      &>p{
+        width: 20vw;
+        height: 30vh;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        line-height: 30px;
+      }
+    }
+  }
+// 랜딩페이지 왼쪽 페이지
+
+&>div:nth-child(2){
+  width: 80vw;
+  height: 100vh;
+  background-color: #ccc;
+
+  &>div:nth-child(1){
+    width: 80vw;
+    height: 10vh;
+    // border: 1px solid red;
+    &>ul{
+      width: 60vw;
+      height: 10vh;
+      // border: 1px solid blue;
+
+      display: flex;
+      list-style-type: none;
+      justify-content: space-around;
+      align-items: center;
+      font-size: 3rem;
+      color: rgb(150, 150, 150);
+      &>li:nth-child(1){
+        color: #000
+      }
+    }
+  }
+
+  &>div:nth-child(2){
+    width: 80vw;
+    height: 90vh;
+    
+    display: flex;
+    &>div{
+      width: 40vw;
+      height: 90vh;
+      // border: 1px solid red;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &>div:nth-child(1)>div:nth-child(1){
+      width: 39vw;
+      height: 40vh;
+      background-color: rgb(158, 158, 158);
+    }
+    &>div:nth-child(1)>div:nth-child(2){
+      width: 37vw;
+      height: 30vh;
+      // background-color: #777;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      &>h3{
+        font-size: 2rem;
+      }
+      &>p{
+        width: 37vw;
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        line-height: 30px;
+      }
+    }
+
+    &>div:nth-child(2){
+      width: 40vw;
+      height: 90vh;
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: column;
+      align-items: center;
+
+    }
+
+    &>div:nth-child(2)>div:nth-child(1){
+      width: 37vw;
+      height: 30vh;
+      // background-color: #777;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      &>h3{
+        font-size: 2rem;
+      }
+      &>p{
+        width: 37vw;
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        line-height: 30px;
+      }
+    }
+    &>div:nth-child(2)>div:nth-child(2){
+      width: 39vw;
+      height: 40vh;
+      background-color: rgb(158, 158, 158);
+    }
+  }
+}
+}
+// 인디필름
+
+}

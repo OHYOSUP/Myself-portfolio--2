@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+.container{
+  width: 50vw;
+  height: 100vh;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* position: relative; */
+  overflow: hidden;
+
+}
+
+.images{
+  /* width: 50vw; */
+  height: 50vh;
+  display: flex;
+
+  position: relative;
+}
+.images>img{
+  width: 50vw;
+  height: 50vh;
+  margin-right: 20px;
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>row Slide</h1>
+    <div class="images">
+      <img src="pilgrimage.png">
+      <img src="1.png">
+      <img src="actorsposter.png">
+    </div>
+
+    <div class="btns">
+      <button id="leftBtn">left</button>
+      <button id="rightBtn">right</button>
+    </div>
+  </div>
+
+  <script>
+const container = document.querySelector('.container');
+const images = document.querySelector('.images');
+const leftBtn = document.getElementById('leftBtn');
+const rightBtn = document.getElementById('rightBtn');
+
+
+// console.log(container);
+// console.log(images);
+
+let index = 0;
+let imgWidth = 50;
+let position = 0;
+
+function next() {
+  if(index > 0){
+    rightBtn.removeAttribute('disabled');
+    position += imgWidth;
+    images.style.transform = `translateX(${imgWidth}vw)`;
+    index = index - 1;
+  }
+  if(index === 0){
+    leftBtn.setAttribute('disabled', 'true');
+  }
+}
+
+function pre(){
+  if(index < 3){
+    leftBtn.removeAttribute('disabled');
+    position -= imgWidth; 
+    images.style.transform = `translateX(${imgWidth}vw)`
+    index = index + 1;
+  }
+  if(index === 3 ){
+    rightBtn.setAttribute('disabled','true');
+  }
+}
+
+function init(){
+  leftBtn.setAttribute('disabled', 'true');
+  leftBtn.addEventListener('click', next);
+  rightBtn.addEventListener('click ', pre);
+}
+
+init();
+
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+#landing{
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#131423, #131423, #131423,#131423, #383733, #45433D, #9D955E);
+  overflow: hidden;
+  
+#backdropBox{
+  width: 100vw;
+  height: 80vh;
+  background-size: cover;
+  opacity: 0.2;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+}
+#box{
+  backdrop-filter: blur(10px);
+}
+
+#textBox{
+  width: 80vw;
+  height: 50vh;
+  position: absolute;
+  left: 10vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+  mix-blend-mode: difference;
+  overflow: hidden;
+
+
+  &>p:nth-child(1){
+    height: 15vh;
+    font-size: 6rem;
+    font-weight: 1000;
+    color: rgba(255, 255, 255,1);
+    
+    
+  }
+  &>p:nth-child(2){
+    width: 50vw;
+    font-size: 2rem;
+    text-align: left;
+    mix-blend-mode: difference;
+    line-height: 60px;
+    // bottom: 30vh;
+    color: rgb(255, 255, 255);
+    // font-weight: 1000;
+  }
+}
+
+
+}
