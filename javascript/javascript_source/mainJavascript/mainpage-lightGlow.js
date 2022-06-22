@@ -22,7 +22,7 @@ export function lightItUp() {
   let timer = setInterval(lightItUp, 100);
   i++;
   if (i < upStair.length) {
-    upStair[i].classList.add('test');
+    upStair[i].classList.add('glowing');
     // console.log(i);
     if (i >= upStair.length) {
       clearInterval(timer);
@@ -39,7 +39,7 @@ export function lightItUp_bottom() {
   let timer = setInterval(lightItUp_bottom, 100);
   d++;
   if (d < downStair.length) {
-    downStair[d].classList.add('test');
+    downStair[d].classList.add('glowing');
     // console.log(d);
     if (d >= downStair.length) {
       clearInterval(timer);

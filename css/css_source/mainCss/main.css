@@ -59,6 +59,7 @@
   width: 60vw;
   height: 45vh;
   background-color: #F4F4F4;
+  box-shadow: 0 0 40px 20px rgb(235, 238, 207), 0 0 70px 40px rgba(228, 204, 152, 0.05), 0 0 100px 60px rgba(255, 174, 0, 0.05);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -155,7 +156,7 @@
   box-shadow: 0 0 40px 20px #fff, 0 0 70px 40px rgba(255, 253, 23, 0.1), 0 0 100px 60px rgba(255, 156, 10, 0.1);
 }
 
-.test {
+.glowing {
   opacity: 0;
   -webkit-animation-name: glowUp;
           animation-name: glowUp;
