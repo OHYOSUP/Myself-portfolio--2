@@ -92,13 +92,17 @@ justify-content: space-around;
         font-size: 7rem;
         letter-spacing: 20px;
         color: #FF6C34;
-      z-index: 3;
+        z-index: 3;
+        font-family: 'EB Garamond', serif;
         
       }
       &>p{
         margin-top: 5vh;
         font-size: 2rem;
       z-index: 3;
+      font-family: 'EB Garamond', serif;
+      font-style: italic;
+
         
       }
     }

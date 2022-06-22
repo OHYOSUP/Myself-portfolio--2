@@ -34,6 +34,7 @@
   color: #fff;
   position: -webkit-sticky;
   position: sticky;
+  z-index: 2;
   padding-top: 80px;
   left: 0vw;
   top: 0vh;
@@ -49,6 +50,7 @@
 #hanbok_pageTwo #hanbok_leftPage > div > h5 {
   font-size: 4rem;
   height: 20vh;
+  mix-blend-mode: transparent;
 }
 #hanbok_pageTwo #hanbok_leftPage > div > p {
   width: 20vw;
@@ -61,7 +63,7 @@
 }
 #hanbok_pageTwo > div:nth-child(3) #hanbok_rightPage {
   width: 70vw;
-  background-color: #ccc;
+  background-image: url(/Image/wallpaper.svg);
   display: flex;
   flex-direction: column;
 }
@@ -76,7 +78,8 @@
   top: 0;
   list-style-type: none;
   font-size: 3.4rem;
-  color: rgb(165, 165, 165);
+  color: #ccc;
+  z-index: 20;
 }
 #hanbok_pageTwo > div:nth-child(3) #hanbok_rightPage #hanbok_pageOne {
   width: 70vw;
@@ -86,7 +89,7 @@
 #hanbok_pageTwo > div:nth-child(3) #hanbok_rightPage #hanbok_detailOne {
   width: 70vw;
   height: 30vh;
-  background-color: #ccc;
+  background-image: url(/Image/wallpaper.svg);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -121,7 +124,7 @@
 #hanbok_pageTwo > div:nth-child(3) #hanbok_rightPage #hanbok_detailThree {
   width: 70vw;
   height: 30vh;
-  background-color: #ccc;
+  background-image: url(/Image/wallpaper.svg);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -156,7 +159,7 @@
 #hanbok_pageTwo > div:nth-child(3) #hanbok_rightPage #hanbok_newWave {
   width: 70vw;
   height: 30vh;
-  background-color: #ccc;
+  background-image: url(/Image/wallpaper.svg);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -185,8 +188,8 @@
 }
 #hanbok_pageTwo > div:nth-child(3) #hanbok_rightPage #hanbok_legacy {
   position: relative;
-  z-index: 20;
-  background-color: #ccc;
+  z-index: 1;
+  background-image: url(/Image/wallpaper.svg);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -222,14 +225,14 @@
 #hanbok_pageTwo > div:nth-child(3) #hanbok_rightPage #hanbok_legacy #legacy_detail {
   width: 70vw;
   height: 120vh;
-  background-color: #ccc;
+  background-image: url(/Image/wallpaper.svg);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
 }
 #hanbok_pageTwo > div:nth-child(3) #hanbok_rightPage #hanbok_legacy #legacy_detail > div:nth-child(1) {
-  width: 50vw;
+  width: 70vw;
   height: 30vh;
   display: flex;
   flex-direction: column;

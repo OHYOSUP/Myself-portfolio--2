@@ -34,8 +34,6 @@ nextPage(main, 'wheel', work)
 prevPage(main, 'wheel', landingPage)
 // mainpage 스크롤이벤트
 import {lightItUp, lightItUp_bottom} from './javascript_source/mainJavascript/mainpage-lightGlow.js'
-
-
 lightItUp();
 setTimeout(lightItUp_bottom,300);
 // mainpage 조명이벤트

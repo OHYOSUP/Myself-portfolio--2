@@ -48,5 +48,7 @@
   text-align: left;
   mix-blend-mode: difference;
   line-height: 60px;
+  font-style: italic;
+  font-weight: 500;
   color: rgb(255, 255, 255);
 }/*# sourceMappingURL=landing.css.map */

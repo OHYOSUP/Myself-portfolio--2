@@ -5,7 +5,6 @@ const box= document.getElementById('box');
 
 
 export const colorChange = (colorA, colorB, colorC, colorD, elems) => {
-
   // let colors = ["#F0DA31", "#F01886", "#F01372"];
   let colors = [colorA, colorB, colorC, colorD];
 
@@ -24,13 +23,9 @@ export const colorChange = (colorA, colorB, colorC, colorD, elems) => {
   elems.style.transform = 'translate(-50%, -50%)';  
   elems.style.zIndex = '10';
   elems.style.opacity = '0.3';
-  
 }
 
 const pinLight = document.getElementById('box');
-
-
-
 
 
 export const lightEffect = (parentTarget, childrenTarget, eventType) => {

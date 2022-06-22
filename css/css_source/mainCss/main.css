@@ -70,11 +70,14 @@
   letter-spacing: 20px;
   color: #FF6C34;
   z-index: 3;
+  font-family: "EB Garamond", serif;
 }
 #main > div:nth-child(2) > div:nth-child(1) > p {
   margin-top: 5vh;
   font-size: 2rem;
   z-index: 3;
+  font-family: "EB Garamond", serif;
+  font-style: italic;
 }
 #main > div:nth-child(3) {
   width: 65vw;

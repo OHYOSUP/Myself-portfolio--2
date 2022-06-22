@@ -6,8 +6,18 @@ const downStair = Array.from(lightGroup_bottom);
 
 
 
-let i = -1;
 
+
+// let currnetYvalue = window.pageYOffset;
+// let totalHeight = window.innerHeight
+// let pageHeight = document.body.scrollHeight;
+// console.log(currnetYvalue);
+// console.log(totalHeight);
+// console.log(pageHeight);
+
+
+
+let i = -1;
 export function lightItUp() {
   let timer = setInterval(lightItUp, 100);
   i++;
