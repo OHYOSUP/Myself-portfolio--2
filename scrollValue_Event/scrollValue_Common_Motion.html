@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>scroll motion</title>
+  <style>
+    body {
+      width: 100%;
+      background-color: rgb(77, 175, 255);
+    }
+
+    .title {
+      width: 100%;
+      opacity: 0;
+      transform: translatey(50px);
+      transition: all 0.5s;
+      font-size: 30px;
+      margin: 400px;
+      text-align: center;
+      color: #fefefe;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="title">제목1</h1>
+  <h2 class="title">제목2</h2>
+  <h2 class="title">제목3</h2>
+
+
+  <script>
+    window.addEventListener('scroll', function () {
+      scrollMotion()
+    });
+
+    function scrollMotion() {
+      const ele = document.querySelectorAll('.title');
+      let eleOffsetArr = [];
+
+      ele.forEach(e => {
+        let eleOffset = e.getBoundingClientRect().top + window.pageYOffset - 300;
+        eleOffsetArr.push(eleOffset)
+        console.log(eleOffset)
+      });
+
+      eleOffsetArr.forEach((offset, idx) => {
+        ele[idx].style.cssText = (window.scrollY > offset ?
+          'opacity:1; transform: translateY(0);' :
+          'opacity:0; transform: translateY(50px);')
+      });
+    }
+  </script>
+
+</body>
+
+</html>

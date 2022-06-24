@@ -31,7 +31,7 @@ export const navEventSecond = function navEventSecond(eventType, color, animatio
           e.preventDefault();
           document.querySelector(this.getAttribute('href')).scrollIntoView({
               behavior: 'smooth'
-          });
+          }); 
       });
   })
   
